@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "抖音直播人数显示",
+  "version": "1.0",
+  "description": "抖音直播间显示具体人数",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://live.douyin.com/*"],
+      "js": ["main.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
